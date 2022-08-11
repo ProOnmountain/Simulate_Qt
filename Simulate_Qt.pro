@@ -5,6 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
+QT       += charts
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -25,10 +26,20 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        startmenu.cpp
+        startmenu.cpp \
+    nodepainter.cpp \
+    paintchart.cpp
 
 HEADERS += \
-        startmenu.h
+        startmenu.h \
+    nodepainter.h \
+    def.h \
+    paintchart.h
 
 FORMS += \
-        startmenu.ui
+        startmenu.ui \
+    nodepainter.ui \
+    paintchart.ui
+
+RESOURCES += \
+    hwlogo.qrc
